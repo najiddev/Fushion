@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/channel-list.php",
+      "dest": "/api/channel-list.php",
+      "headers": {
+        "Cache-Control": "no-cache"
+      }
+    }
+  ],
+  "regions": ["bom1"]
+}
